@@ -1,4 +1,5 @@
-# Instadev React SPA (Parte 1)
+# Instadev React SPA
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c04d0464-fea6-4f6e-96cf-710f9af9103e/deploy-status)](https://app.netlify.com/sites/viniciusvinna-react-instagram/deploys)
 
 ![](docs/instadev.gif)
 
