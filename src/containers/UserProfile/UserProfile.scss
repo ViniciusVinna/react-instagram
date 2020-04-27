@@ -1,0 +1,63 @@
+.profile {
+  background-color: #16202B;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.profile-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  .user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user__thumb {
+    background: linear-gradient(45deg, #D51589 0%, #FF991C 100%);
+    border: 2px solid transparent;
+    height: 150px;
+    width: 150px;
+    margin: 0;
+  }
+
+  .user__name {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 0;
+    font-weight: bold;
+    transition: all ease-in-out .2s;
+    color: white;
+
+    span {
+      color: #858d93;
+      font-weight: normal;
+      font-size: 1.4rem;
+
+      &:before {
+        content: "-";
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 728px) {
+  .profile-data {
+    padding: 40px 16px 20px;
+
+    .user__thumb {
+      height: 200px;
+      width: 200px;
+    }
+  }
+}

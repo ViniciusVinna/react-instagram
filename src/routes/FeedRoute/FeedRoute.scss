@@ -1,0 +1,13 @@
+.feed {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (min-width: 728px) {
+  .feed {
+    padding: 16px 0;
+  }
+}

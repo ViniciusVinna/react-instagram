@@ -1,0 +1,64 @@
+.post__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px;
+
+  @media screen and (min-width: 728px) {
+    padding: 40px;
+  }
+
+  .post__form__wrapper {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (min-width: 728px) {
+      width: 80%;
+    }
+
+    button {
+      background: linear-gradient(45deg, #D51589 0%, #FF991C 100%);
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 0 auto;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+  }
+
+  label {
+    display: block;
+    color: #858D93;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+  }
+
+  input {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 5px;
+    border: 1px solid #858D93;
+    color: white;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    transition: all ease-in-out .2s;
+
+    &::placeholder {
+      font-weight: normal;
+    }
+
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid #F06B41;
+    }
+  }
+}

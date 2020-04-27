@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{instadev/node_modules}" />
+    <file url="PROJECT" libraries="{@types/eslint, @types/jest, @types/node, @types/npm, @types/react-router, @types/react-router-dom, @types/redux-actions, @types/redux-devtools, @types/storybook-addon-jsx, @types/styled-components, @types/styled-jsx, @types/styled-theming, @types/testing-library__dom, @types/testing-library__react, instadev/node_modules}" />
+  </component>
+</project>

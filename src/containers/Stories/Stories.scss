@@ -1,0 +1,31 @@
+.stories {
+  background-color: #16202B;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 16px;
+  width: 100%;
+}
+
+.stories .container {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
+.stories .user__thumb {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  height: 72px;
+  justify-content: center;
+  margin: 0 5px;
+  padding: 0;
+  width: 72px;
+}
+
+.stories .user__thumb__wrapper {
+  height: 65px;
+  width: 65px;
+}

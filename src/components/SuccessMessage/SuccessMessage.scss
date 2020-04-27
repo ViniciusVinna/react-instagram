@@ -1,0 +1,116 @@
+.success-message {
+  align-items: center;
+  background-color: #4caf50;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  left: 50%;
+  margin: auto;
+  max-width: 400px;
+  overflow: hidden;
+  padding: 20px;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  z-index: 2;
+
+  &__title {
+    font-size: 2.4rem;
+    line-height: 1;
+  }
+
+  &__content {
+    font-size: 1.4rem;
+    line-height: 1;
+
+    a {
+      color: #08111e;
+      text-decoration: underline;
+    }
+  }
+}
+
+.successAnimationCircle {
+  stroke-dasharray: 151px;
+  stroke: #FFF;
+}
+
+.successAnimationCheck {
+  stroke-dasharray: 36px 36px;
+  stroke: #FFF;
+}
+
+.successAnimationResult {
+  fill: #FFF;
+  opacity: 0;
+}
+
+.successAnimation.animated {
+  -webkit-animation: 1s ease-out 0s 1 both scaleAnimation;
+  animation: 1s ease-out 0s 1 both scaleAnimation;
+}
+.successAnimation.animated .successAnimationCircle {
+  -webkit-animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCircle, 0.3s linear 0.9s 1 both fadeOut;
+  animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCircle, 0.3s linear 0.9s 1 both fadeOut;
+}
+.successAnimation.animated .successAnimationCheck {
+  -webkit-animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCheck, 0.3s linear 0.9s 1 both fadeOut;
+  animation: 1s cubic-bezier(0.77, 0, 0.175, 1) 0s 1 both drawCheck, 0.3s linear 0.9s 1 both fadeOut;
+}
+.successAnimation.animated .successAnimationResult {
+  -webkit-animation: 0.3s linear 0.9s both fadeIn;
+  animation: 0.3s linear 0.9s both fadeIn;
+}
+
+@keyframes scaleAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes drawCircle {
+  0% {
+    stroke-dashoffset: 151px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes drawCheck {
+  0% {
+    stroke-dashoffset: 36px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

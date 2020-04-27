@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/eslint" level="application" />
+    <orderEntry type="library" name="@types/jest" level="application" />
+    <orderEntry type="library" name="@types/node" level="application" />
+    <orderEntry type="library" name="@types/npm" level="application" />
+    <orderEntry type="library" name="@types/react-router" level="application" />
+    <orderEntry type="library" name="@types/react-router-dom" level="application" />
+    <orderEntry type="library" name="@types/redux-actions" level="application" />
+    <orderEntry type="library" name="@types/redux-devtools" level="application" />
+    <orderEntry type="library" name="@types/storybook-addon-jsx" level="application" />
+    <orderEntry type="library" name="@types/styled-components" level="application" />
+    <orderEntry type="library" name="@types/styled-jsx" level="application" />
+    <orderEntry type="library" name="@types/styled-theming" level="application" />
+    <orderEntry type="library" name="@types/testing-library__dom" level="application" />
+    <orderEntry type="library" name="@types/testing-library__react" level="application" />
+  </component>
+</module>
