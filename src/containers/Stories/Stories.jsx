@@ -34,7 +34,9 @@ const Stories = ({ stories, getUserHandler }) => {
                 className={`user__thumb ${index === 0 && 'user__thumb--hasNew'}`}
               >
                 <div className="user__thumb__wrapper">
-                  <img src={profileData.avatar} alt={profileData.name} />
+                  {profileData?.avatar && (
+                    <img src={profileData?.avatar} alt={profileData.name} />
+                  )}
                 </div>
               </button>
             )})
